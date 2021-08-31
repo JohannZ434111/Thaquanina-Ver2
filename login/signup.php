@@ -34,7 +34,7 @@ require_once '../database.php';
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link rel = "preconnect" href = "https://fonts.googleapis.com">
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="../css/../css/estilologin.css">
 </head>
 <body>
    
