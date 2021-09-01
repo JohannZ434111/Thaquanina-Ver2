@@ -31,6 +31,10 @@ if(count($resultado) > 0 && password_verify($_POST['password'], $resultado['pass
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link rel = "preconnect" href = "https://fonts.googleapis.com">
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+
+<link rel="shortcut icon" href="images/minilogo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/minilogo.png">
+    
 <link rel="stylesheet" href="../css/estilologin.css">
 </head>
 <body>
