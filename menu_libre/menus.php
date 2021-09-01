@@ -1,3 +1,13 @@
+<?php
+session_reset();
+
+require_once '../database.php';
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,7 +149,7 @@
                 <div class="card">
                     <img src="imagenes/img-08.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Huecas</h4>
+                        <h4>Cuybrisket Hot</h4>
                         <p>Bebida ilimitada</p>
                         <img src="imagenes/clasificacion.png" width="25" >
                         <p class="precio">$30 <span class="u-pull-right">$18</span> </p>
