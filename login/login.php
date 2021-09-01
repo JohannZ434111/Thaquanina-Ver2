@@ -47,7 +47,7 @@ if(count($resultado) > 0 && password_verify($_POST['password'], $resultado['pass
    <form action="login.php" method="post">
       <input type="email" id="email" name="email" placeholder="usuario">
       <input type="password" id="password" name="password" placeholder="password">
-      <input type="submit" name="submit" value="Entrar">
+      <input type="submit" name="submit" href="Menu_Usuario/index.html" value="Entrar">
     </form>
     <a href="signup.php">REGISTRARSE</a>
 
