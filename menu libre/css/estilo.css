@@ -1,0 +1,177 @@
+body {
+    background-color: #ffffff;
+}
+h1 {
+    text-align: center;
+    color: rgb(177, 126, 31);
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+@media (min-width : 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-platilo {
+    background-color: #fbaf32;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+    font-weight: bold;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../imagenes/comida-rica.jpg);
+    height: 555px;
+}
+.encabezado {
+    margin: 30px 0;
+    color: rgb(100, 80, 80);
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    color: rgb(182, 131, 131);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #967159;
+    padding: 20px;
+}
+.vacio {
+    padding: 10px;
+    background-color: #fbaf32;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(180, 111, 111);
+}
+.button {
+    background-color: #fbaf32;
+    color: rgb(92, 28, 28);
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: rgb(189, 191, 196);
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image:url(../imagenes/lupa.png);
+    background-position: right right;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #fbaf32;
+    background: -webkit-linear-gradient(left, #b95a00 0%,#ad5400 100% );
+}
+.barra p {
+    margin: 0;
+    color: rgb(31, 15, 15);
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+.icono1 {
+    background-image: url(../imagenes/2.png);
+}
+.icono2 {
+    background-image: url(../imagenes/chef.png);
+}
+.icono3 {
+    background-image: url(../imagenes/bebidas.png);
+}
+
+#lista-platillos .row {
+    margin-bottom: 20px;
+}
+.agregar-carrito{
+    margin: 10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: hsla(39, 68%, 36%, 0.925);
+}
+@media (min-width:550px){
+    .card {
+        text-align: left;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: white;
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    background: #000000;
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
