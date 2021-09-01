@@ -27,7 +27,7 @@ if(count($resultado) > 0 && password_verify($_POST['password'], $resultado['pass
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>lOGIN</title>
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link rel = "preconnect" href = "https://fonts.googleapis.com">
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@ if(count($resultado) > 0 && password_verify($_POST['password'], $resultado['pass
 
 
 
-<h1>Login</h1>
+<h1>LOGIN</h1>
 
    <form action="login.php" methood="post">
       <input type="email" id="email" name="email" placeholder="usuario">
