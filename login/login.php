@@ -4,8 +4,9 @@ session_reset();
 require_once '../database.php';
 
 if (!empty($_POST['email']) && !empty($_POST['password'])){
-$consulta = $conn->prepare('SELECT id, email, passwor FROM users  WHERE email = :email');
-$consukta->bindParam(':email',$_POST['email']);
+$consulta = $conn->prepare('SELECT id, email, passwor FROM users  WHERE email = :email AND passwor = :passwor');
+$consulta->bindParam(':email',$_POST['email']);
+$consulta->bindParam(':passwor',$_POST['passwor']);
 $consulta->execute();
 $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
  
@@ -13,7 +14,7 @@ $message = '';
 
 if(count($resultado) > 0 && password_verify($_POST['password'], $resultado['passwor'])){
     $_SESSION['user_id'] = $resultado['id'];
-    header('Location: /index.html');
+    header('Location: Menu_Usuario/index.html');
 }else{
     $message = 'usuario incorrecto';
 }
