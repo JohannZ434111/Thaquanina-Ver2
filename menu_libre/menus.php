@@ -4,10 +4,6 @@ session_reset();
 require_once '../database.php';
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,16 +57,13 @@ require_once '../database.php';
         <div class="container">
             <div class="row">
                 <div class="four columns icono icono1">
-                    <p>Gran variedad de platillos de la region<br>
-                    Explora los nuevos platillos</p>
+                    
                 </div>
                 <div class="four columns icono icono2">
-                    <p>chefs experimentaddo<br>
-                    Prueba las nuevas combinacion</p>
+                   
                 </div>
                 <div class="four columns icono icono3">
-                    <p>Bebida ilimitada<br>
-                    Prueba tu bebida favorita</p>
+                    
                 </div>
             </div>
         </div>
@@ -79,112 +72,80 @@ require_once '../database.php';
 
 
     <div class="lista-platillos" class="container">
-        <h1 class="encabezado">Pedidos en Linea</h1>
+        <h1 class="encabezado">Busca en Linea</h1>
 
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/gallery-img-01.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/Hcorvinagolaira.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket al leño</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Hueca</h4>
+                        <p>Las corvinas de Gloria</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <p class="precio">$50 <span class="u-pull-right">$18</span> </p> 
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Huecas</a>
                     </div>
                 </div>
             </div>
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/gallery-img-02.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/CRsanbartolo.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket crocant</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Comida rapida</h4>
+                        <p>Los pollos de San bartolo</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <p class="precio">$50 <span class="u-pull-right">$25</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar comida rapida</a>
                     </div>
                 </div>
             </div>
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/gallery-img-03.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/RCOLMENA.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket en su salsa</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Restaurante </h4>
+                        <p>La colmena</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Restaurantes</a>
                     </div>
                 </div>
             </div>
         </div>
-
+<h3></h3>
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/gallery-img-04.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/Htripfabiolita.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket china</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Hueca</h4>
+                        <p>Las Famosas Tripas de Doña Fabiolita</p>
                         <img src="imagenes/clasificacion.png" width="25" >
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Huecas</a>
                     </div>
                 </div>
             </div>
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/gallery-img-05.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/Crpapiados.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket casero</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Comida rapida</h4>
+                        <p>Papiados</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar comida rapida</a>
                     </div>
                 </div>
             </div>
             <div class="four columns">
                 <div class="card">
-                    <img src="imagenes/img-08.jpg" class="imagen-platillo u-full-width">
+                    <img src="imagenes/Rvistahermosa.jpg" class="imagen-platillo u-full-width">
                     <div class="info-card">
-                        <h4>Cuybrisket Hot</h4>
-                        <p>Bebida ilimitada</p>
+                        <h4>Restaurante</h4>
+                        <p>Vista Hermosa</p>
                         <img src="imagenes/clasificacion.png" width="25" >
-                        <p class="precio">$30 <span class="u-pull-right">$18</span> </p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Restaurantes</a>
                     </div>
                 </div>
             </div>
         </div>
-
+<h3></h3>
+<h3></h3>
     </div>
-
-
-
-    <footer class="footer"> 
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <nav class="menu">
-                        <a class="enlace" href="#">Pedidos a domicilio</a>
-                        <a class="enlace" href="#">Pedidos en linea</a>
-                        <a class="enlace" href="#">Pedidos por telefono</a>
-                        <a class="enlace" href="#">Menu</a>
-                        <a class="enlace" href="#">Bebidas</a>
-                    </nav>
-                </div>
-                <div class="four columns">
-                    <nav class="menu">
-                        <a class="enlace" href="#">Restaurante</a>
-                        <a class="enlace" href="#">Ubicacion</a>
-                        <a class="enlace" href="#">Telefono</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    
 </body>
