@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +12,15 @@
 </head>
 <body>
 
+    
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="four columns">
                     <h1><img src="" alt="" >Buscador de Restaurantes</h1>
+                    <button>
+                    <a class="btn btn-lg btn-circle btn-outline-new-white" href="C:/xampp/htdocs/Thaquanina-Ver2/index.html#">REGRESAR</a>
+                </button>
                 </div>
                 <div class="two columns u-pull-right">
                     <ul>
@@ -77,7 +80,7 @@
                         <h4>Hueca</h4>
                         <p>Las corvinas de Gloria</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Huecas</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el centro</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +91,7 @@
                         <h4>Comida rapida</h4>
                         <p>Los pollos de San bartolo</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar comida rapida</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el sur</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +102,7 @@
                         <h4>Restaurante </h4>
                         <p>La colmena</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Restaurantes</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el centro</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +116,7 @@
                         <h4>Hueca</h4>
                         <p>Las Famosas Tripas de Doña Fabiolita</p>
                         <img src="imagenes/clasificacion.png" width="25" >
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Huecas</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el norte</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +127,7 @@
                         <h4>Comida rapida</h4>
                         <p>Papiados</p>
                         <img src="imagenes/clasificacion.png" width="25">
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar comida rapida</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el norte</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +138,7 @@
                         <h4>Restaurante</h4>
                         <p>Vista Hermosa</p>
                         <img src="imagenes/clasificacion.png" width="25" >
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas Restaurantes</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Buscar mas en el sur</a>
                     </div>
                 </div>
             </div>
