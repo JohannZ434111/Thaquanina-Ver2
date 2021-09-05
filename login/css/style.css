@@ -89,11 +89,7 @@
   color: #EF3B3A;
 }
 body {
-  background: #756b13; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #756b13, #756b13);
-  background: -moz-linear-gradient(right, #756b13, #756b13);
-  background: -o-linear-gradient(right, #756b13, #756b13);
-  background: linear-gradient(to left, #756b13, #756b13);
+  background-image: url("C:/xampp/htdocs/Thaquanina-Ver2/login/img/back_login.png");
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
