@@ -1,8 +1,3 @@
-<?php
-session_reset();
-
-require_once '../database.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
