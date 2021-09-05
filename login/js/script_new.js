@@ -17,7 +17,9 @@ function login() {
     var loginUser = document.getElementById('usuario');
     var loginPass = document.getElementById('password');
 
-    if(loginUser.value == userGuardado && loginPass.value == passGuardado) {
+    if(loginUser.value == 'admin' && loginPass.value == '123') {
+        alert('Usted Entrara como modo Administrador, Proceda a ingresar Restaurantes');
+    }else if(loginUser.value == userGuardado && loginPass.value == passGuardado) {
         alert('Has hecho Login Satisfactoriamente, Bienvenido');
         window.location="file:///C:/xampp/htdocs/Thaquanina-Ver2/Menu_Usuario/menu_usuario.html"
     }else {
