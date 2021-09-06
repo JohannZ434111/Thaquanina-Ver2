@@ -1,0 +1,38 @@
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.header{
+  background-color: rgb(255, 255, 255);
+  align-self: center;
+  border: solid 2px #000;
+}
+
+div.header {
+  text-align: right;
+  border-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+  background-color: rgb(255, 255, 255);
+  color:rgb(74, 83, 21);
+  border: rgb(94, 75, 14) 5px solid;
+  border-collapse: collapse;
+}
+
+td {
+  background: rgb(235, 203, 145);
+  margin: 15px;
+  padding: 15px;
+}
+
+body {
+  background-image: url("C:/xampp/htdocs/Thaquanina-Ver2/menu_admin/img/back_admin.png");
+  background-size: 1700px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}

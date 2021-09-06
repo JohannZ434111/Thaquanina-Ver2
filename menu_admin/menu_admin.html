@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Menu de Administrador</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">    
+    <div class="header">
+    <h1 align="center" >Modificacion de Restaurantes</h1>
+    <table><a class="nav-link" align = "right" href="C:/xampp/htdocs/Thaquanina-Ver2/index.html"> << Log Out</a></table>
+    </div>
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <table id="grid" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Nombre de Restaurante</th>
+                    <th>Tipo</th>
+                    <th>Ubicacion</th>
+                    <th>Sector</th>
+                    <th>Contacto</th>
+                    <th style="width:80px;"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <input id="nombre" type="text" class="form-control" />
+                    </th>
+                    <th>
+                        <input id="tipo" type="text" class="form-control" />
+                    </th>
+                    <th>
+                        <input id="ubicacion" type="text" class="form-control" />
+                    </th>
+                    <th>
+                        <input id="sector" type="text" class="form-control" />
+                    </th>
+                    <th>
+                        <input id="contacto" type="url" class="form-control" />
+                    </th>
+                    <th>
+                        <button id="btn-add" class="btn btn-default">Add</button>
+                    </th>
+                </tr>
+                </thead>
+              <tbody></tbody>
+             </table>
+            </div>
+        </div>
+    </div>
+    <script src= "js/script.js"> </script>
+</body> 
+</html>
