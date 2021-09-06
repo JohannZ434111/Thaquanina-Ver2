@@ -1,7 +1,7 @@
 window.onload = function () {
     var localStorageKeyName = 'data';
 
-    loadFromLocalStorage();
+    cargar();
 
     document.querySelector("#btn-add").addEventListener('click', function () {
         var nombre = document.getElementById("nombre"),
@@ -13,7 +13,7 @@ window.onload = function () {
         if (nombre.value.length === 0 || tipo.value.length === 0 || ubicacion.value.length === 0 ||
             sector.value.length === 0 || contacto.value.length === 0 ) return;
 
-        var user = {
+        var dato = {
             nombre: nombre.value,
             tipo: tipo.value,
             ubicacion: ubicacion.value,
@@ -28,80 +28,75 @@ window.onload = function () {
         contacto.value = '';
         alert('Datos Guardados');
 
-        appendObjectToLocalStorage(user);
+        guardar(dato);
     })
 
-    function appendObjectToLocalStorage(obj) {
-        var users = [],
+    function guardar(obj) {
+        var datos = [],
             dataInLocalStorage = localStorage.getItem(localStorageKeyName);
-
         if (dataInLocalStorage !== null) {
-            users = JSON.parse(dataInLocalStorage);
+            datos = JSON.parse(dataInLocalStorage);
         }
+        datos.push(obj);
+        localStorage.setItem(localStorageKeyName, JSON.stringify(datos));
 
-        users.push(obj);
-
-        localStorage.setItem(localStorageKeyName, JSON.stringify(users));
-
-        loadFromLocalStorage();
+        cargar();
     }
 
-    function loadFromLocalStorage() {
-        var users = [],
+    function cargar() {
+        var datos = [],
             dataInLocalStorage = localStorage.getItem(localStorageKeyName),
             gridBody = document.querySelector("#grid tbody");
 
         if (dataInLocalStorage !== null) {
-            users = JSON.parse(dataInLocalStorage);
+            datos = JSON.parse(dataInLocalStorage);
         }
 
 
     gridBody.innerHTML = '';
-    users.forEach(function (x, i) {
-        var tr = document.createElement("tr"),
-            tdNombre = document.createElement("td"),
-            tdTipo = document.createElement("td"),
-            tdUbicacion = document.createElement("td"),
-            tdSector = document.createElement("td"),
-            tdContacto = document.createElement("td"),
-            tdRemove = document.createElement("td"),
-            btnRemove = document.createElement("button");
+    datos.forEach(function (x, i) {
+        var tabla = document.createElement("tr"),
+            tablaNombre = document.createElement("td"),
+            tablaTipo = document.createElement("td"),
+            tablaUbicacion = document.createElement("td"),
+            tablaSector = document.createElement("td"),
+            tablaContacto = document.createElement("td"),
+            tablaRemover = document.createElement("td"),
+            botonRemover = document.createElement("button");
 
-            tdNombre.innerHTML = x.nombre;
-            tdTipo.innerHTML = x.tipo;
-            tdUbicacion.innerHTML = x.ubicacion;
-            tdSector.innerHTML = x.sector;
-            tdContacto.innerHTML = x.contacto;
+            tablaNombre.innerHTML = x.nombre;
+            tablaTipo.innerHTML = x.tipo;
+            tablaUbicacion.innerHTML = x.ubicacion;
+            tablaSector.innerHTML = x.sector;
+            tablaContacto.innerHTML = x.contacto;
 
-        btnRemove.textContent = 'Remove';
-        btnRemove.className = 'btn btn-xs btn-danger';
-        btnRemove.addEventListener('click', function(){
-            removeFromLocalStorage(i);
+            botonRemover.textContent = 'Remove';
+            botonRemover.className = 'btn btn-xs btn-danger';
+            botonRemover.addEventListener('click', function(){
+            remover(i);
         });
 
-        tdRemove.appendChild(btnRemove);
+        tablaRemover.appendChild(botonRemover);
 
-        tr.appendChild(tdNombre);
-        tr.appendChild(tdTipo);
-        tr.appendChild(tdUbicacion);
-        tr.appendChild(tdSector);
-        tr.appendChild(tdContacto);
-        tr.appendChild(tdRemove);
-        gridBody.appendChild(tr);
+        tabla.appendChild(tablaNombre);
+        tabla.appendChild(tablaTipo);
+        tabla.appendChild(tablaUbicacion);
+        tabla.appendChild(tablaSector);
+        tabla.appendChild(tablaContacto);
+        tabla.appendChild(tablaRemover);
+        gridBody.appendChild(tabla);
     });
 
 
-    function removeFromLocalStorage(index){
-        var users = [],
+    function remover(index){
+        var datos = [],
             dataInLocalStorage = localStorage.getItem(localStorageKeyName);
+            datos = JSON.parse(dataInLocalStorage);
+            datos.splice(index, 1);
 
-        users = JSON.parse(dataInLocalStorage);
+        localStorage.setItem(localStorageKeyName, JSON.stringify(datos));
 
-        users.splice(index, 1);
-
-        localStorage.setItem(localStorageKeyName, JSON.stringify(users));
-
-        loadFromLocalStorage();
+        cargar();
     }
 }
 }
